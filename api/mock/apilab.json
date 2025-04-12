@@ -1,0 +1,938 @@
+{
+  "uuid": "da89b9b6-1c7d-42bf-b9dc-5b9209827313",
+  "lastMigration": 33,
+  "name": "apilab api spec",
+  "endpointPrefix": "v1",
+  "latency": 0,
+  "port": 3000,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "1924ffe4-65c6-4ee3-891a-d5fac1b742d5",
+      "type": "http",
+      "documentation": "Get all elements",
+      "method": "get",
+      "endpoint": "elements",
+      "responses": [
+        {
+          "uuid": "97fad5e1-7544-466c-9872-e4cae18f8f7d",
+          "body": "[\n  {\n    \"uuid\": \"\",\n    \"name\": \"\",\n    \"description\": \"\",\n    \"type\": \"\",\n    \"data\": {\n      \"key\": \"\",\n      \"value\": \"\"\n    }\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "OK",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "398cac3f-f12f-4aa3-b343-d475d3315b77",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "400 Bad Request",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "cf2778df-4417-4a28-bf1f-6ece2a1afa48",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "401 Unauthorized",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "dfc4bb60-e1a2-49cf-af49-ab7e1a5db6fb",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 403,
+          "label": "403 Forbidden",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "3bc24693-c080-4bc2-aac4-7912b8865770",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "404 Not Found",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "2a8ea574-d9f5-4784-87f7-e86397079252",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 429,
+          "label": "429 Too Many Requests",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "bc01d0bd-cb98-4175-9c6b-cd3649c5c38f",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 500,
+          "label": "500 Internal Server Error",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "01ccb1e5-54ba-4cd8-b1fc-c7e43c5af14c",
+      "type": "http",
+      "documentation": "Create a new element",
+      "method": "post",
+      "endpoint": "elements",
+      "responses": [
+        {
+          "uuid": "6f44a16f-4e64-44ab-a6b9-2fb3d2594264",
+          "body": "{\n  \"uuid\": \"\",\n  \"name\": \"\",\n  \"description\": \"\",\n  \"type\": \"\",\n  \"data\": {\n    \"key\": \"\",\n    \"value\": \"\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Created",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "d4e0f46b-68c9-42d3-85b5-834b8aaa9310",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "400 Bad Request",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "3ed8947d-82ef-4b4f-82f5-54a7d760dd68",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "401 Unauthorized",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "8eac62d0-c333-491c-9d2f-683b5a2489b8",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 403,
+          "label": "403 Forbidden",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "0354b9ad-15d9-4f9d-9a62-936a760f7c76",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 429,
+          "label": "429 Too Many Requests",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "0ea3e42c-917c-4324-ae26-f6e090c99e5c",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 500,
+          "label": "500 Internal Server Error",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "52a58f5f-7af3-448a-9e4f-736dcd465684",
+      "type": "http",
+      "documentation": "Get a element by ID",
+      "method": "get",
+      "endpoint": "elements/:elementId",
+      "responses": [
+        {
+          "uuid": "1428854a-78de-46f9-97d4-3b59f4a394eb",
+          "body": "{\n  \"uuid\": \"\",\n  \"name\": \"\",\n  \"description\": \"\",\n  \"type\": \"\",\n  \"data\": {\n    \"key\": \"\",\n    \"value\": \"\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "OK",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "40635764-976e-49f4-b32d-a3a443a9046b",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "400 Bad Request",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "aec091c8-f15e-4324-a2f0-923816204b15",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "401 Unauthorized",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "3ad76aa6-c131-4d6f-b413-0c8b5295aa34",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 403,
+          "label": "403 Forbidden",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "1580aead-1feb-4a25-91a3-2e4130703add",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "404 Not Found",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "a1bb9c82-5238-4b48-846f-bd27f1ae848a",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 429,
+          "label": "429 Too Many Requests",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "171f1610-8130-4f53-a245-4092fe89c4a2",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 500,
+          "label": "500 Internal Server Error",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "b3e82f74-a27d-4306-9da8-f6534927c4a1",
+      "type": "http",
+      "documentation": "Update a element by ID",
+      "method": "put",
+      "endpoint": "elements/:elementId",
+      "responses": [
+        {
+          "uuid": "05d10110-1e0e-4422-8058-16a950e670ac",
+          "body": "{\n  \"uuid\": \"\",\n  \"name\": \"\",\n  \"description\": \"\",\n  \"type\": \"\",\n  \"data\": {\n    \"key\": \"\",\n    \"value\": \"\"\n  }\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "OK",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "f756dd52-f719-4db7-ac35-6659f3294e2f",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "400 Bad Request",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "ef386713-7bab-4e58-9bab-7f334afb09b4",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "401 Unauthorized",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "e75fc325-0385-49f8-887e-4d2c784ebfe8",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 403,
+          "label": "403 Forbidden",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "51db124a-6b04-4eca-b425-0595b144d6f7",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "404 Not Found",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "34341a05-cbf1-436e-b4b2-f3d4680c2282",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 429,
+          "label": "429 Too Many Requests",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "131fc5b5-0289-4625-800b-0f24943352dd",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 500,
+          "label": "500 Internal Server Error",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "cb32905e-4e14-4ca9-a7db-3246317b6631",
+      "type": "http",
+      "documentation": "Delete a element by ID",
+      "method": "delete",
+      "endpoint": "elements/:elementId",
+      "responses": [
+        {
+          "uuid": "1042bcab-dd86-43ba-8000-957e6980ecc4",
+          "body": "",
+          "latency": 0,
+          "statusCode": 204,
+          "label": "No Content",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "80f50267-c478-4069-84ed-ce1266755bdc",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 400,
+          "label": "400 Bad Request",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "73f9433c-b78e-42c3-a339-0f9959dc5600",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 401,
+          "label": "401 Unauthorized",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "ff1b6dcc-fd03-4ba3-9e34-924ba17cd99e",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 403,
+          "label": "403 Forbidden",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "5b793de0-58bd-4e70-a50f-ad52a9aa153e",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 404,
+          "label": "404 Not Found",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "fbbf6716-dc2c-4c0a-8ef9-f5383c7dff7e",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 429,
+          "label": "429 Too Many Requests",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "bca576e3-f008-46cc-919e-58f593462491",
+          "body": "{\n  \"code\": \"\",\n  \"description\": \"\"\n}",
+          "latency": 0,
+          "statusCode": 500,
+          "label": "500 Internal Server Error",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "1924ffe4-65c6-4ee3-891a-d5fac1b742d5"
+    },
+    {
+      "type": "route",
+      "uuid": "01ccb1e5-54ba-4cd8-b1fc-c7e43c5af14c"
+    },
+    {
+      "type": "route",
+      "uuid": "52a58f5f-7af3-448a-9e4f-736dcd465684"
+    },
+    {
+      "type": "route",
+      "uuid": "b3e82f74-a27d-4306-9da8-f6534927c4a1"
+    },
+    {
+      "type": "route",
+      "uuid": "cb32905e-4e14-4ca9-a7db-3246317b6631"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}
